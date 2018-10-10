@@ -202,6 +202,8 @@ public class MainActivity extends AppCompatActivity {
 
         }
     }
+    
+    //The following method loads the webview which houses the soundcloud iframe
     private void initWebView(String weather) {
 
         WebView mWebView = findViewById(R.id.webview);
@@ -229,6 +231,7 @@ public class MainActivity extends AppCompatActivity {
         mWebView.loadData(html, "text/html", null);
     }
 
+    //below is a huge arraylist and switch statement which contains all the embed links for the playlists according to the weather
     private void songfinder(String we){
 
         ArrayList<ArrayList<String>> master_list=new ArrayList<>();
